@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+.table {
+  width: 70%;
+  margin: 20px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.icon {
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.userControl {
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.keywordFilter {
+  width: 30%;
+  border: 1px solid rgb(201, 201, 201);
+  margin: 10px 0;
+  border-radius: 2px;
+  padding: 5px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.deleteSelected {
+  color: #4d94ff;
+  padding: 10px 15px;
+  outline: none;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #4d94ff;
+  border-radius: 2px;
+}
+
+.deleteSelected:hover {
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  font-size: 14px;
+  outline: none;
+  border: none;
+  margin: 0 0 0 10px;
+  width: 100%;
+}
+
+.title {
+  font-weight: 600 !important;
+}
+
+.editForm {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.editForm input {
+  font-size: 14px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border: 1px solid rgb(201, 201, 201);
+  width: 30%;
+  border-radius: 2px;
+}
+
+.update {
+  color: #4d94ff;
+  padding: 10px 15px;
+  outline: none;
+  background-color: #4d94ff;
+  color: rgb(255, 255, 255);
+  border-radius: 2px;
+  outline: none;
+  border: none;
+}
+
+.update:hover {
+  cursor: pointer;
+}
+
+.muitablerow-root {
+  background-color: red;
+}
+
+.Mui-selected {
+  background-color: rgb(245, 245, 245) !important;
+}
+
+#userForm {
+  display: none;
+}
+
+#loader {
+  display: none;
+}
+
+.circularProgress {
+  text-align: center;
+  margin: 40px 0 60px 0;
 }
